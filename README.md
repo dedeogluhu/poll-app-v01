@@ -1,8 +1,8 @@
 # Poll App v01
 
-- I wanted to compare and experience various backend and frontend technologies. 
+- I wanted to experience various backend and frontend technologies so i started with this project. 
 
-- Going to make the same project with all of them but i can change my mind depending on the situation.
+- My goal is to make the similar projects with all of them and see the differences.
 
 - Started this one with express using pug and sass engines and going to add a MongoDb.
    
