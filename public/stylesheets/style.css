@@ -10,24 +10,33 @@ body {
 a {
   text-decoration: none; }
 
+ul {
+  list-style: none; }
+
 .container {
   width: 900px;
   margin: 0 auto; }
 
-.nav .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 1rem 0; }
-  .nav .navbar .brand {
-    color: #6c757d;
-    font-size: 2rem; }
-  .nav .navbar .navbar-right {
+.nav {
+  border-bottom: 0.2px solid gray; }
+  .nav .navbar {
     display: flex;
     justify-content: space-between;
-    align-items: center; }
-  .nav .navbar .navbar-right-item {
-    margin: 1rem 1.5rem; }
+    align-items: center;
+    padding: 1rem 0; }
+    .nav .navbar .brand {
+      color: #007bff;
+      font-size: 2rem;
+      transition: text-shadow 1s; }
+    .nav .navbar .brand:hover {
+      color: orange;
+      text-shadow: 0 0 5px #000000; }
+    .nav .navbar .navbar-right {
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+    .nav .navbar .navbar-right-item {
+      margin: 1rem 1.5rem; }
 
 .content {
   display: flex;
@@ -50,6 +59,9 @@ a {
 
 .btn {
   padding: 0.5rem 1rem; }
+
+.btn-primary {
+  background-color: #007bff; }
 
 .btn-secondary {
   background-color: #f8f9fa; }
@@ -76,5 +88,29 @@ a {
 
 .char-name {
   padding: 0.5rem 2rem; }
+
+.form {
+  margin: 1rem 0; }
+  .form .input {
+    display: block;
+    margin: 1rem auto;
+    width: 20rem;
+    height: 2rem;
+    border: 1px solid blue;
+    border-radius: 10px;
+    padding-left: 10px;
+    padding-right: 10px; }
+  .form .input:focus {
+    border: 2px solid blue;
+    transform: scale(1.02);
+    outline: none; }
+  .form .label {
+    margin-top: 1rem; }
+  .form .submit {
+    border-radius: 10px; }
+  .form .submit:hover {
+    background-color: #007bff;
+    color: #f8f9fa;
+    box-shadow: 2px 2px gray; }
 
 /*# sourceMappingURL=style.css.map */

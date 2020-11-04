@@ -16,11 +16,16 @@ body
 a
 	text-decoration: none
 
+ul
+	list-style: none
+
 .container
 	width: 900px
 	margin: 0 auto
 
 .nav
+	border-bottom: 0.2px solid gray
+
 	.navbar
 		display: flex
 		justify-content: space-between
@@ -28,8 +33,13 @@ a
 		padding: 1rem 0
 
 		.brand
-			color: $secondary-color
+			color: $primary-color
 			font-size: 2rem
+			transition: text-shadow 1s
+
+		.brand:hover
+			color: orange
+			text-shadow: 0 0 5px #000000
 
 		.navbar-right
 			display: flex
@@ -65,6 +75,9 @@ a
 .btn
 	padding: 0.5rem 1rem
 
+.btn-primary
+	background-color: $primary-color
+
 .btn-secondary
 	background-color: $light-color
 
@@ -90,3 +103,32 @@ a
 
 .char-name
 	padding: 0.5rem 2rem
+
+.form
+	margin: 1rem 0
+
+	.input
+		display: block
+		margin: 1rem auto
+		width: 20rem
+		height: 2rem
+		border: 1px solid blue
+		border-radius: 10px
+		padding-left: 10px
+		padding-right: 10px
+
+	.input:focus
+		border: 2px solid blue
+		transform: scale(1.02)
+		outline: none
+
+	.label
+		margin-top: 1rem
+
+	.submit
+		border-radius: 10px
+
+	.submit:hover
+		background-color: $primary-color
+		color: $light-color
+		box-shadow: 2px 2px gray
