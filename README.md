@@ -14,6 +14,11 @@
 
 # Getting Started
 
+### Prepare project
+```
+yarn install
+```
+
 ### Start production server
 
 ```
