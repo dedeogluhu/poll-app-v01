@@ -11,3 +11,17 @@
     - Sass feels like i am overengineering the project. 
     
 - **I am going to update the readme.**
+
+# Getting Started
+
+### Start production server
+
+```
+yarn start
+```
+
+### Start development server
+
+```
+yarn dev
+```
