@@ -7,20 +7,24 @@ block content
       div(class='navbar-right')
         a(class='btn btn-secondary navbar-right-item char-name') Hüso
   div(class='content')
-    div(class='topics text-center')
-      h1(class='text-center content-header') Topics
+    
+    div(class='posts text-center')
+      h1(class='text-center content-header') Add a Post
+      hr(class='header-seperator')
+      form(class='form' autocomplete="off")
+        label(for="question" class='label') Question
+        input(type="text" id='question' class='input' autocomplete="off" placeholder='Give your question a name...')
+        label(for="choice" class='label') Choices
+        div
+          input(type="text" id='choice' class='input-choice' autocomplete="off" placeholder='Give your choices...')
+          button(class='btn-choice' id='addChoiceBtn') Add Choice
+        div(id='choices-added' class='choices-added')
+        input(type="submit", value="Post Question" class='btn btn-secondary submit' id='submit')
+      h1(class='text-center content-header') Posts
       hr(class='header-seperator')
       div(class='dummy-div')
-    div(class='posts text-center')
-      h1(class='text-center content-header') Add Post
-      hr(class='header-seperator')
-      form(action="/", method="post" class='form')
-        label(for="question" class='label') Question
-        input(type="text" id='question' class='input' placeholder='Give your question a name...')
-        label(for="answer" class='label') Answers
-        input(type="text" id='answer' class='input' placeholder='Give your choices...')
-        input(type="submit", value="Add Post" class='btn btn-secondary submit')
-      h1(class='text-center content-header') Posts
+    div(class='topics text-center')
+      h1(class='text-center content-header') Topics
       hr(class='header-seperator')
       div(class='dummy-div')
     div(class='popular')
