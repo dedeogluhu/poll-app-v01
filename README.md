@@ -12,7 +12,7 @@
     
 - **I am going to update the readme.**
 
-# Getting Started
+## Getting Started
 
 ### Prepare project
 ```
