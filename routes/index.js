@@ -6,4 +6,8 @@ router.get('/', function (req, res, next) {
   res.render('index', { title: 'Poll App' });
 });
 
+router.post('/', (req, res, next) => {
+  console.log(req.body);
+});
+
 module.exports = router;
