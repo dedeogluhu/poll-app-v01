@@ -7,7 +7,6 @@ block content
       div(class='navbar-right')
         a(class='btn btn-secondary navbar-right-item char-name') Hüso
   div(class='content')
-    
     div(class='posts text-center')
       h1(class='text-center content-header') Add a Post
       hr(class='header-seperator')
@@ -22,7 +21,19 @@ block content
         input(type="submit", value="Post Question" class='btn btn-secondary submit' id='submit')
       h1(class='text-center content-header') Posts
       hr(class='header-seperator')
-      div(class='dummy-div')    
+      div(class='post-list')  
+        div(class='post-card') 
+          h4(class='post-question') Choose one?
+          ul(class='post-choices')
+            li(class='post-choice') choice 1 
+            li(class='post-choice') choice 2
+            li(class='post-choice') choice 3
+        div(class='post-card') 
+          h4(class='post-question') Choose one 2?
+          ul(class='post-choices')
+            li(class='post-choice') choice 4
+            li(class='post-choice') choice 5
+            li(class='post-choice') choice 6
     div(class='popular')
       h1(class='text-center content-header') Popular
       hr(class='header-seperator')
