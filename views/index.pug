@@ -5,35 +5,47 @@ block content
     div(class='container navbar') 
       a(href='#' class='btn brand') Pollzz
       div(class='navbar-right')
+        a(class='btn btn-secondary navbar-right-item char-name') Create a Post
         a(class='btn btn-secondary navbar-right-item char-name') Hüso
   div(class='content')
     div(class='posts text-center')
       h1(class='text-center content-header') Add a Post
       hr(class='header-seperator')
-      form(class='form' autocomplete="off")
+      form(class='form' autocomplete="off" id='add-form')
         label(for="question" class='label') Question
         input(type="text" id='question' class='input' autocomplete="off" placeholder='Give your question a name...')
         label(for="choice" class='label') Choices
         div
           input(type="text" id='choice' class='input-choice' autocomplete="off" placeholder='Give your choices...')
           button(class='btn-choice' id='addChoiceBtn') Add Choice
-        div(id='choices-added' class='choices-added')
+        div(id='choice-list-add' class='choice-list-add')
         input(type="submit", value="Post Question" class='btn btn-secondary submit' id='submit')
       h1(class='text-center content-header') Posts
       hr(class='header-seperator')
       div(class='post-list')  
         div(class='post-card') 
-          h4(class='post-question') Choose one?
-          ul(class='post-choices')
-            li(class='post-choice') choice 1 
-            li(class='post-choice') choice 2
-            li(class='post-choice') choice 3
+          h3(class='post-question') Choose one?
+          form(class='form' autocomplete="off" id='choose-form')
+            div(class='post-choices')
+              div(class='post-choice')  
+                input(type="radio" name="choice" value='choice')
+                label(for="choice" class='label') Choice
+              div(class='post-choice')   
+                input(type="radio" name="choice2" value='choice')
+                label(for="choice2" class='label') Choice
+              div(class='post-choice') 
+                input(type="radio" name="choice3" value='choice')  
+                label(for="choice3" class='label') Choice
+              input(type="submit" value='Choose')  
         div(class='post-card') 
-          h4(class='post-question') Choose one 2?
+          h3(class='post-question') Choose one 2?
           ul(class='post-choices')
-            li(class='post-choice') choice 4
-            li(class='post-choice') choice 5
-            li(class='post-choice') choice 6
+            li(class='post-choice')    
+              a(href="#") choice 4
+            li(class='post-choice')    
+              a(href="#") choice 5
+            li(class='post-choice')    
+              a(href="#") choice 6
     div(class='popular')
       h1(class='text-center content-header') Popular
       hr(class='header-seperator')
