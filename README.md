@@ -12,23 +12,23 @@
     
 - **I am going to update the readme.**
 
-## Getting Started
+### Getting Started
 
-### Prepare project
+#### Prepare project
 ```
 yarn install
 ```
 
-### Start production server
+#### Start production server
 
 ```
 yarn start
 ```
 
-### Start development server
+#### Start development server
 
 ```
 yarn dev
 ```
 
-**License**: [MIT](https://github.com/dedeogluhu/poll-app-v01/blob/main/LICENSE)
+### License: [MIT](https://github.com/dedeogluhu/poll-app-v01/blob/main/LICENSE)
