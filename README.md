@@ -30,5 +30,6 @@ yarn start
 ```
 yarn dev
 ```
-<hr>
+<hr/>
+
 ### License : [MIT](https://github.com/dedeogluhu/poll-app-v01/blob/main/LICENSE)
