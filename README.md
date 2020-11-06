@@ -1,5 +1,3 @@
-# Poll App v01
-
 - I wanted to experience various backend and frontend technologies so i started with this project. 
 
 - My goal is to make the similar projects with all of them and see the differences.
@@ -12,7 +10,7 @@
     
 - **I am going to update the readme.**
 
-### Getting Started
+## Getting Started
 
 #### Prepare project
 ```
