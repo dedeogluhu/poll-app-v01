@@ -1,11 +1,13 @@
 let addChoiceButton = document.querySelector('#addChoiceBtn');
 let submitButton = document.querySelector('#submit');
 let addChoiceInput = document.querySelector('#choice');
-let form = document.querySelector('.form');
+let addForm = document.querySelector('#add-form');
+let chooseForm = document.querySelector('#choose-form');
 let questionInput = document.querySelector('#question');
-let addedChoices = document.querySelector('#choices-added');
+let addedChoices = document.querySelector('#choice-list-add');
 
-form.addEventListener('submit', (event) => { event.preventDefault(); });
+addForm.addEventListener('submit', (event) => { event.preventDefault(); });
+chooseForm.addEventListener('submit', (event) => { event.preventDefault(); });
 addChoiceButton.addEventListener('click', addChoice);
 submitButton.addEventListener('click', postQuestion);
 
@@ -16,7 +18,7 @@ function addChoice() {
     choices.push(choice);
     let element = document.createElement('span');
     element.innerHTML = choice;
-    element.classList.add('choice');
+    element.classList.add('choice-add');
     addedChoices.appendChild(element);
     addChoiceInput.value = '';
     addChoiceInput.focus();
