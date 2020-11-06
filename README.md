@@ -14,7 +14,7 @@
 
 ## Getting Started
 
-#### Prepare project
+#### Prepare the project
 ```
 yarn install
 ```
