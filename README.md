@@ -31,4 +31,4 @@ yarn start
 yarn dev
 ```
 
-## **License**: [MIT](https://github.com/dedeogluhu/poll-app-v01/blob/main/LICENSE)
+**License**: [MIT](https://github.com/dedeogluhu/poll-app-v01/blob/main/LICENSE)
