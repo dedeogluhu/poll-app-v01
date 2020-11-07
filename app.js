@@ -7,6 +7,7 @@ var sassMiddleware = require('node-sass-middleware');
 const cors = require('cors');
 
 var indexRouter = require('./routes/index');
+var addRouter = require('./routes/add');
 
 var app = express();
 
@@ -28,6 +29,7 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use('/add', addRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
