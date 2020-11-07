@@ -1,0 +1,21 @@
+extends layout
+
+block content
+    nav(class='nav')
+        div(class='container navbar') 
+            a(href='#' class='btn brand') Pollzz
+            div(class='navbar-right')
+                a(class='btn btn-secondary navbar-right-item char-name' href='/') Return to Main Menu
+                a(class='btn btn-secondary navbar-right-item char-name' href='#') Hüso
+    div(class='text-center content-header')
+        div(class='header-seperator')
+        form(class='form' autocomplete="off" id='add-form')
+            label(for="question" class='label') Question
+            input(type="text" id='question' class='input' autocomplete="off" placeholder='Give your question a name...')
+            label(for="choice" class='label') Choices
+            div
+            input(type="text" id='choice' class='input-choice' autocomplete="off" placeholder='Give your choices...')
+            button(class='btn-choice' id='addChoiceBtn') Add Choice
+            div(id='choice-list-add' class='choice-list-add')
+            input(type="submit", value="Post Question" class='btn btn-secondary submit' id='submit')
+    script(src="/javascripts/add.js")           
